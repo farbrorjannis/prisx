@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f0e6 0%, #e8dccc 100%);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    color: #3a2c1b;
+}
+
+.prisX-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(255, 250, 240, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    padding: 2.5rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid #d4b68a;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #5e3a1c;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #7d5e3a;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #5e3a1c;
+    font-size: 1.1rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    font-size: 1.1rem;
+    border: 2px solid #d4b68a;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: white;
+    font-family: inherit;
+}
+
+input:focus, select:focus {
+    border-color: #b38b5d;
+    box-shadow: 0 0 0 3px rgba(179, 139, 93, 0.2);
+}
+
+small {
+    display: block;
+    margin-top: 0.3rem;
+    color: #7d5e3a;
+    font-size: 0.9rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+#beraknaBtn {
+    background: #b38b5d;
+    color: white;
+    box-shadow: 0 4px 10px rgba(179, 139, 93, 0.3);
+}
+
+#beraknaBtn:hover {
+    background: #9c7347;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(179, 139, 93, 0.4);
+}
+
+#nollstallBtn {
+    background: #c0a080;
+    color: white;
+    box-shadow: 0 4px 10px rgba(192, 160, 128, 0.3);
+}
+
+#nollstallBtn:hover {
+    background: #a88664;
+    transform: translateY(-2px);
+}
+
+.resultat {
+    background: #faf1e4;
+    border-left: 6px solid #b38b5d;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #3a2c1b;
+    text-align: center;
+}
+
+.forklaring {
+    background: #faf5ec;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid #d4b68a;
+}
+
+.forklaring h3 {
+    color: #b38b5d;
+    margin-bottom: 1rem;
+}
+
+.forklaring h4 {
+    color: #7d5e3a;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.forklaring p {
+    margin-bottom: 0.8rem;
+    color: #4a3a28;
+    line-height: 1.6;
+}
+
+.forklaring ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #4a3a28;
+}
+
+.forklaring li {
+    margin-bottom: 0.3rem;
+}
+
+.tips {
+    background: #f0e4d2;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #b38b5d;
+    font-style: italic;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .prisX-container {
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    button {
+        width: 100%;
+        margin-right: 0;
+    }
+}

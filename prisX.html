@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prissättningshjälp för Konstnärer | Storlek × X</title>
+    <link rel="stylesheet" href="prisX.css">
+</head>
+<body>
+    <div class="prisX-container">
+        <header>
+            <h1>📏 Prissättningshjälp – Storlek × X</h1>
+            <p class="subtitle">En enkel modell: (Höjd + Bredd) × X = Pris inklusive ram</p>
+        </header>
+
+        <div class="input-group">
+            <label for="höjd">Höjd (cm):</label>
+            <input type="number" id="höjd" placeholder="t.ex. 15" min="1" step="1" value="15">
+        </div>
+
+        <div class="input-group">
+            <label for="bredd">Bredd (cm):</label>
+            <input type="number" id="bredd" placeholder="t.ex. 20" min="1" step="1" value="20">
+        </div>
+
+        <div class="input-group">
+            <label for="xVärde">X – Din erfarenhetsnivå:</label>
+            <select id="xVärde">
+                <option value="20">20 – Nybörjare (målat ett par år)</option>
+                <option value="30">30 – Målat ett par år</option>
+                <option value="40" selected>40 – Målat några år</option>
+                <option value="50">50 – Etablerad (ca 5000 timmar)</option>
+                <option value="100">100 – Professionell (konsthögskola, 10 000+ timmar)</option>
+            </select>
+            <small>Välj det X som bäst matchar din erfarenhet</small>
+        </div>
+
+        <button onclick="beraknaPrisX()" id="beraknaBtn">Beräkna pris</button>
+        <button onclick="nollstallX()" id="nollstallBtn">Nollställ</button>
+
+        <div class="resultat" id="resultatX">
+            <p>Fyll i mått och välj X för att se priset</p>
+        </div>
+
+        <div class="forklaring">
+            <h3>📋 Så här fungerar modellen:</h3>
+            <p><strong>Pris = (Höjd + Bredd) × X</strong></p>
+            <p>Priset är <strong>inklusive ram</strong> och baserat på centimetermått.</p>
+            
+            <h4>Vad betyder X?</h4>
+            <ul>
+                <li><strong>100</strong> – Professionell konstnär (konsthögskola, 10 000+ timmar)</li>
+                <li><strong>50</strong> – Etablerad (ca 5 000 timmar)</li>
+                <li><strong>40</strong> – Målat några år</li>
+                <li><strong>30</strong> – Målat ett par år</li>
+                <li><strong>20</strong> – Nybörjare</li>
+            </ul>
+            
+            <p class="tips">💡 <strong>Kom ihåg:</strong> Det är lättare att sänka ett pris i efterhand än att höja. Tro på dig själv och ditt arbete!</p>
+        </div>
+    </div>
+
+    <script src="prisX.js"></script>
+</body>
+</html>
